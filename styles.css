@@ -130,3 +130,60 @@ a:hover {
           margin-top: 10px;
           padding: 15px;
 }
+
+#jobs {
+      display: flex;
+      text-align: center;  
+      background-image: url(./images/nihonorway-graphy-nCvi-gS5r88-unsplash.jpg);  
+      background-size: cover;
+      background-position-x: center;
+      background-attachment: fixed;
+      box-shadow: rgba(13, 14, 13, 0.8) 0 3000px inset;
+      color: white;
+      font-size: large;
+}
+
+#jobs>div {
+      margin: 30px;     
+}
+
+#jobs>div>img {
+      border-radius: 20px;
+      border: hotpink solid 2px;
+}
+
+#jobs>div>p {
+            border: solid 1.5px hotpink;
+            border-radius: 10px;
+            max-width: 15vw;
+}
+
+.heading {
+         text-align: center;
+         font-size: 30px;
+         line-height: 3px;
+         
+}
+#contacts {
+         background-image: url(./images/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg);
+         background-size: cover;
+         background-position-x: center;
+         background-attachment: fixed;
+         box-shadow: rgba(13, 14, 13, 0.7) 0 3000px inset;
+         color: white;
+         height: 100vh;
+         margin-top:10px;
+         display: flex;
+}
+
+#contacts>p {
+      padding: 10px;
+      
+}
+
+#contacts>p>img {
+      display: inline-flexbox;
+      padding:0 10px 20px 0;
+      align-items: center;
+
+}
