@@ -1,0 +1,132 @@
+.container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      animation: transitionib 0.75sec;
+      background-color: hotpink;
+}
+@keyframes transitionib {
+      from {
+            opacity: 0;
+            transform: rotateX(-10deg);
+      }
+      to {
+            opacity: 1;
+            transform: rotateX(0);
+
+      }
+}
+.block-effect {
+      font-size: calc(4px + 2vw);
+      height: 100vh;
+      background-image: url(./images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position-x: center;
+      box-shadow: rgba(13, 14, 13, 0.8) 0 3000px inset;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      cursor: pointer;
+      
+    }
+    
+ .block-reveal {
+      --t: calc(var(--td) + var(--d));
+      color: transparent;
+      padding: 4px;
+      position: relative;
+      overflow: hidden;
+      animation: revealBlock 0s var(--t) forwards;
+    }
+    
+.block-reveal::after {
+      content: '';
+      width: 0%;
+      height: 100%;
+      padding-bottom: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: var(--bc);
+      animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+    }
+    
+    
+    /* animations */
+@keyframes revealBlock {
+      100% {
+        color:white;
+        font-weight: bolder;
+
+      }
+    }
+    
+@keyframes revealingIn {
+      100% {
+        width: 100%;
+      }
+    }
+    
+@keyframes revealingOut {
+      100% {
+        transform: translateX(100%);
+      }
+    
+    }
+
+.block-reveal>a{
+          text-decoration: none;
+          color: white;
+          padding: 10px;
+    }
+header {
+          display: flex;
+          background-image: url(./images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
+          background-size: cover;
+          background-position-x: center;
+          box-shadow: rgba(13, 14, 13, 0.8) 0 3000px inset;
+          justify-content: flex-end;
+          position: fixed;
+          width: 97.7vw;
+          border-top: hotpink 3px solid;
+    }
+
+ nav>ul>li{
+          display: inline-block;
+          padding: 5px;
+          margin:5px;
+          line-height: 10px;
+    }
+
+nav>ul>li>a {
+          text-decoration: none;
+          color: white;
+          font-size: large;
+          padding: 10px;
+}
+    
+a:hover {
+          border: solid 1.5px hotpink;
+          color: hotpink;
+
+}
+
+#about {
+          height: 100vh;
+          display: flex;
+          justify-content: space-between;
+          background-image: url(./images/christian-wiediger-WkfDrhxDMC8-unsplash.jpg);
+          background-attachment: fixed;
+          background-position-x: center;
+          background-size: cover;
+          box-shadow: rgba(13, 14, 13, 0.9) 0 3000px inset;
+          color: white;
+          margin-top: 10px;
+          padding: 15px;
+}
