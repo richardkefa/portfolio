@@ -5,24 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".more1").click(function(){
+    $(".description").toggle();
+  });
+});
+</script>
+<script>
+  $(document).ready(function(){
+    $(".more2").click(function(){
+      $(".description2").toggle();
+    });
+  });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".more3").click(function(){
+        $(".description3").toggle();
+      });
+    });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#menu").click(function(){
+          $(".nav").toggle();
+        });
+      });
+      </script>
+
 </head>
 <body>
   <div class="container">
     <header>
+      <!-- <button id="menu" onclick="myFunction()">menu</button> -->
       <nav>
-        <ul>
+        <ul class="nav">
           <li><a href="#home">Home</a></li>
-          <li><a href="about">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#jobs">Portfolio</a></li>
           <li><a href="#contacts">Contact</a></li>
         </ul>
     </header>
   </nav>
-  <div class="block-effect" style="--td: 1.2s">
-    <div class="block-reveal" style="--bc: hotpink; --d: .1s"><p>Hello I'm Richard Kefa<br> I'm a full stack web developer </p></div>
-    <div class="block-reveal" style="--bc: yellow; --d: .5s"><a href="#jobs">view my Work</a></div>
+  <div id="home">
+    <div class="block-effect" style="--td: 1.2s">
+      <div class="block-reveal" style="--bc: hotpink; --d: .1s"><p>Hello I'm Richard Kefa<br> I'm a full stack web developer </p></div>
+      <div class="block-reveal" style="--bc: yellow; --d: .5s"><a href="#jobs">view my Work</a></div>
+    </div>
   </div>
-    
+  <h3 class="heading">About</h3>
     <div id="about">
     <div>
       <img src="https://bit.ly/2W7FTE2" alt="Richard Kefa" width="100%" height="300vh">
@@ -76,28 +109,69 @@
     <h3 class="heading">Portfolio</h3>
     <div id="jobs">
         <div>
-          <img src="./images/nyumbanihostel.png" alt="hostel system" width="100%" height="400vh"><br>
-          <p>Learn more</p>
-          <img src="./images/brightside collection.png" alt="Brightside collection" width="100%" height="400vh"><br>
-          <p>Learn More</p>
+          <a href="https://richardkefa.github.io/hostel-managment/"><img src="./images/nyumbanihostel.png" alt="hostel system" width="100%" height="400vh"></a>
+          <button class="more1"onclick="myFunction()">Learn More</button>
+          <div class="description">
+            <h3>Hostel Managment System</h3>
+            <p>
+              This system was built using Html CSS and Javascript. <br>
+              The system is Supposed to help stdents to find hostels from the comfort of their homes. <br>
+              They access the system and choose a room depending on there preferences and book it before they come to ther istitutions. <br>
+              It reduces the hustle and stress students go through while trying to find a room. <br>
+              It also reduces the long cues tha universities have to deal with on the first day of school. <br>
+            </p>
+          </div>
+          <a href="https://richardkefa.github.io/Brightside_collection/"><img src="./images/brightside collection.png" alt="Brightside collection" width="100%" height="400vh"><br></a>
+          <button class="more2"onclick="myFunction()">Learn More</button>
+          <div class="description2">
+            <h3>Brightside Collection</h3>
+            <p>
+              This website was built using html and css. <br>
+              The website is users to get a platform to view and buy bads and shoes. <br>
+              The users can order any quantity and specific colors. <br>
+              The paace is responsive in any device. <br>
+              The website also provides an online platform for Brightside Collection.
+            </p>
+          </div>
         </div>
         <div>
-          <img src="./images/gammerx.png" alt="GAmer-x" width="100%" height="400vh">
-          <p>Learn More</p>
-          <img src="./images/happy trails.png" alt="Happy trails" width="100%" height="400vh"><br>
-          <p>Learn More</p>
+          <a href="https://richardkefa.github.io/Gamer-x/"><img src="./images/gammerx.png" alt="GAmer-x" width="100%" height="400vh"></a>
+          <button class="more3"onclick="myFunction()">Learn More</button>
+          <div class="description3">
+            <h3>Gamer-x</h3>
+            <p>
+              This website as built using html and CSS <br>
+              This is a Blog spot for gamers where they can get the latest news,<br> and technology and new games that have been launched.
+              There A section on topics like  <em>Benefits of Gaming<em> and <em>History of games<em><br>
+              Users can Download Pc Games that no viruses and are bug-free, to get the true gaming experience
+            </p>
+          </div>
+          <a href="https://richardkefa.github.io/travel_agency/"><img src="./images/happy trails.png" alt="Happy trails" width="100%" height="400vh"></a>
+          <button class="more4"onclick="myFunction()">Learn More</button>
+          <div class="description4">
+            <h3>Travel Agency</h3>
+            <p>
+              This website is built with Html and CSS.<br>
+              This website is the Official website for Happytrail tours.<br>
+              It is a test to understand more on working with git-hub 
+            </p>
+          </div>
         </div>
     </div>
     <h3 class="heading">Get in Touch</h3>
     <div id="contacts">
-         <P>
-           <img src="./images/icons8-call-100.png" alt="Tel" width="50px" height="50px">+254705264685<br>
-           <img src="./images/icons8-email-100.png" alt="Email" width="50px" height="50px">ricchardkefa7@gmail.com<br>
-           <img src="./images/icons8-linkedin-100.png" alt="linkedin" width="50px" height="50px">richardkefa<br>
-           <img src="./images/icons8-hub-100.png" alt="Github" width="50px" height="50px">richard kefa
-         </P>
-
+           <div>
+            <div class="info"><img src="./images/icons8-call-100.png" alt="Tel" width="50px" height="50px">+254705264685</div>
+            <div class="info"><img src="./images/icons8-email-100.png" alt="Email" width="50px" height="50px">ricchardkefa7@gmail.com</div>
+            <div class="info"><img src="./images/icons8-linkedin-100.png" alt="linkedin" width="50px" height="50px">richardkefa</div>
+            <div class="info"><img src="./images/github-10-xxl.png" alt="Github" width="50px" height="50px">richard kefa</div>
+           </div>
+          <form>
+            <textarea name="textarea" placeholder="Talk to Me"cols="50" rows="15" aria-invalid="false"></textarea><br>
+            <button type="submit"><span>Send message</span></button>
+          </form>
     </div>
+    <span><p>Copyright ©2020 Portfolio, Inc. All rights reserved.Privacy & Legal Policies</p></span>
   </div>
   
 </body>

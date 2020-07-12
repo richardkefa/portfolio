@@ -1,3 +1,6 @@
+*{
+      scroll-behavior: smooth;
+}
 .container {
       width: 100%;
       height: 100%;
@@ -7,6 +10,7 @@
       flex-direction: column;
       animation: transitionib 0.75sec;
       background-color: hotpink;
+      
 }
 @keyframes transitionib {
       from {
@@ -102,6 +106,7 @@ header {
           padding: 5px;
           margin:5px;
           line-height: 10px;
+          
     }
 
 nav>ul>li>a {
@@ -110,13 +115,18 @@ nav>ul>li>a {
           font-size: large;
           padding: 10px;
 }
+nav>ul>li>a:hover {
+          border: solid 2px #ff69b4;
+}
     
-a:hover {
-          border: solid 1.5px hotpink;
+.block-reveal>a:hover {
+          border: solid 2px hotpink;
           color: hotpink;
 
 }
-
+.description,.description2,.description3,.description4 {
+      display: none;
+}
 #about {
           height: 100vh;
           display: flex;
@@ -127,7 +137,6 @@ a:hover {
           background-size: cover;
           box-shadow: rgba(13, 14, 13, 0.9) 0 3000px inset;
           color: white;
-          margin-top: 10px;
           padding: 15px;
 }
 
@@ -149,7 +158,7 @@ a:hover {
 
 #jobs>div>img {
       border-radius: 20px;
-      border: hotpink solid 2px;
+      position: relative;
 }
 
 #jobs>div>p {
@@ -171,19 +180,102 @@ a:hover {
          background-attachment: fixed;
          box-shadow: rgba(13, 14, 13, 0.7) 0 3000px inset;
          color: white;
-         height: 100vh;
+         height: 80vh;
          margin-top:10px;
          display: flex;
+         justify-content: space-between;
 }
 
-#contacts>p {
+.info{
       padding: 10px;
-      
+      display: flex;
+      align-items: center; 
 }
 
-#contacts>p>img {
-      display: inline-flexbox;
-      padding:0 10px 20px 0;
+.info>img {
+      padding:10px 10px 20px 0;
       align-items: center;
 
+
+}
+
+form {
+      margin:25px 100px 0 0;
+}
+textarea {
+      box-shadow: hotpink 0 5px 5px 0 inset;
+      background-color: black;
+      color: hotpink;
+      font-size: large;
+}
+button {
+      font-size: large;
+      cursor: pointer;
+      background-color: #131212;
+      border: hotpink 2px solid;
+      color: white;
+      padding: 5px;
+}
+
+span {
+      text-align: center;
+      font-size: small;
+}
+
+
+@media screen and (max-width:750px){
+      .container{
+            overflow-x: hidden;
+      }
+      #about {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+      }
+
+      #jobs {
+            display: flex;
+            flex-direction: column;
+      }
+      #contacts {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+      }
+      
+       textarea {
+            width: 97vw;
+            margin: 5px;
+            
+       }
+       header {
+             width: 95vw;
+             display: flex;
+             flex-direction: column;
+             border: solid hotpink 1px;
+             opacity: 0.8;
+             
+       }
+
+ nav>ul>li{
+      padding: 2px;
+      line-height: 10px;
+      display: inline-block;
+      
+      
+}
+#menu {
+      display:none;
+      max-height: 40px;
+      max-width: 90px;
+      margin: 10px;
+}
+nav>ul>li>a {
+      text-decoration: none;
+      color: white;
+      font-size: large;
+      padding: 5px;
+      font-size:small;
+
+}
 }
