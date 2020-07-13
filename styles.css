@@ -10,6 +10,7 @@
       display: flex;
       flex-direction: column;
       background-color:black;
+      font-family: 'Righteous', cursive;
       
 }
 @keyframes transitionib {
@@ -24,7 +25,7 @@
       }
 }
 .block-effect {
-      font-size: calc(4px + 2vw);
+      font-size: calc(5px + 3vw);
       height: 100vh;
       background-image: url(./images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
       background-attachment: fixed;
@@ -37,6 +38,7 @@
       align-items: center;
       justify-content: space-evenly;
       cursor: pointer;
+      font-family: 'Play', sans-serif;
       
     }
     
@@ -172,6 +174,7 @@ nav>ul>li>a:hover {
          font-size: 30px;
          line-height: 3px;
          color: hotpink;
+         font-family: 'Fondamento', cursive;
          
 }
 #contacts {
@@ -225,7 +228,7 @@ button:hover {
 span {
       text-align: center;
       font-size: small;
-      color: hotpinkgit a;
+      color: hotpink
 }
 
 
