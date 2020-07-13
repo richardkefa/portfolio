@@ -1,4 +1,4 @@
-# POrtfolio
+# Portfolio
 #### This portfolio shows the languages and description of projects that I have done, Version 1.0 
 #### By **Richard kefa Mcharo**
 
@@ -23,7 +23,6 @@ The page was built using
 * Htnml
 * CSS
 * Jquery
-This has created nice visual effects making the site more.
 ## Support and contact details
 In case of any issue during collaboration please-
 * Email at richardkefa7@gmail.com
