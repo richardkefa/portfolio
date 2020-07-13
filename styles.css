@@ -1,5 +1,6 @@
 *{
       scroll-behavior: smooth;
+      animation: transitionib 0.75sec;
 }
 .container {
       width: 100%;
@@ -8,8 +9,7 @@
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      animation: transitionib 0.75sec;
-      background-color: hotpink;
+      background-color:black;
       
 }
 @keyframes transitionib {
@@ -171,6 +171,7 @@ nav>ul>li>a:hover {
          text-align: center;
          font-size: 30px;
          line-height: 3px;
+         color: hotpink;
          
 }
 #contacts {
@@ -212,14 +213,19 @@ button {
       font-size: large;
       cursor: pointer;
       background-color: #131212;
+      color: hotpink;
+      padding: 5px;
+}
+
+button:hover {
       border: hotpink 2px solid;
       color: white;
-      padding: 5px;
 }
 
 span {
       text-align: center;
       font-size: small;
+      color: hotpinkgit a;
 }
 
 
