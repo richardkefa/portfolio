@@ -241,11 +241,15 @@ span {
             flex-direction: column;
             height: 100%;
       }
+      #about>img {
+            width: 100%;
+      }
 
       #jobs {
             display: flex;
             flex-direction: column;
       }
+
       #contacts {
             display: flex;
             flex-direction: column;
@@ -257,7 +261,7 @@ span {
             margin: 5px;
             
        }
-       header {
+       heder {
              width: 95vw;
              display: flex;
              flex-direction: column;
@@ -273,18 +277,13 @@ span {
       
       
 }
-#menu {
-      display:none;
-      max-height: 40px;
-      max-width: 90px;
-      margin: 10px;
-}
+
 nav>ul>li>a {
       text-decoration: none;
       color: white;
       font-size: large;
       padding: 5px;
-      font-size:small;
+      font-size:15px;
 
 }
 }
