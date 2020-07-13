@@ -227,7 +227,7 @@ button:hover {
 
 span {
       text-align: center;
-      font-size: small;
+      font-size: x-small;
       color: hotpink
 }
 
@@ -261,12 +261,12 @@ span {
             margin: 5px;
             
        }
-       heder {
-             width: 95vw;
-             display: flex;
-             flex-direction: column;
+       header {
+             max-width: 92%;
              border: solid hotpink 1px;
              opacity: 0.8;
+             justify-content: start;
+             align-items: center;
              
        }
 
@@ -283,7 +283,7 @@ nav>ul>li>a {
       color: white;
       font-size: large;
       padding: 5px;
-      font-size:15px;
+      font-size:14px;
 
 }
 }

@@ -22,6 +22,7 @@ It contains contact info on how you can reach me if you are intrested in working
 The page was built using
 * Htnml
 * CSS
+* Jquery
 This has created nice visual effects making the site more.
 ## Support and contact details
 In case of any issue during collaboration please-
