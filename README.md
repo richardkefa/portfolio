@@ -3,7 +3,7 @@
 #### By **Richard kefa Mcharo**
 
 ## Description 
-https://richardkefa.github.io/portfolio/
+https://github.com/richardkefa/portfolio/tree/gh-pages
 
 This is version !.0 of this portfolio that gives descriptive detailes on the languages i am familier with and include al the projects that i have done.
 It aslo includes live links to all the projects so that you can view my work.
