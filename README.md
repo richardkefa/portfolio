@@ -2,7 +2,9 @@
 #### This portfolio shows the languages and description of projects that I have done, Version 1.0 
 #### By **Richard kefa Mcharo**
 
-## Description
+## Description 
+https://richardkefa.github.io/portfolio/
+
 This is version !.0 of this portfolio that gives descriptive detailes on the languages i am familier with and include al the projects that i have done.
 It aslo includes live links to all the projects so that you can view my work.
 It contains contact info on how you can reach me if you are intrested in working together.
